@@ -1,0 +1,42 @@
+#board-container {
+    display: grid;
+    width: 40vw;
+    height: 40vw;
+}
+
+.container-fluid {
+    height: 100vh;
+}
+table {
+    table-layout: fixed;
+}
+
+table, td {
+    border: 5px solid gray;
+}
+
+td:hover {
+    background-color: gray;
+    color: white;
+}
+
+
+td {
+    width: 33.33%;
+    height: 33.33%;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: bold;
+    color: gray;
+}
+
+#gameWon {
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+}
+
+@keyframes badMove {
+    from {background-color: red;}
+    to {background-color: gray;}
+}
